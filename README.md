@@ -590,7 +590,7 @@ https://git-scm.com/docs/git-cherry-pick
   你可能会奇怪`local/main`和`origin/main`是怎么关联起来的，总不能是更根据分支的名字对应吧，欸，还真不是。在Git中有这样的一条命令来设置本地分支与追踪分支的对应关系（当然也可以说是建立本地分支与远程分支的关联）
 
   ```shell
-  git branch --ser-upstream-to=[追踪分支] [本地分支]
+  git branch --set-upstream-to=[追踪分支] [本地分支]
   ```
 
   而`local/main`和`origin/main`的对应关系实际上早就在Git帮你自动建立`local/main`时帮你设定好了
@@ -665,12 +665,12 @@ git remote -v
 
 #### clone
 
-#### 
+
 
 <img src="https://obssh.obs.cn-east-3.myhuaweicloud.com/img_xunguang/202407262127179.png" alt="image_git_clone" style="zoom:135%;" />
 先克隆引用，然后根据引用的指向依次拿到commit对象，一直拿到溯源拿到根部的commit
 
-#### 
+
 
 #### fetch
 
